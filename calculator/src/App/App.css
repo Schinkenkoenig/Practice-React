@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 10px;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+#calculator {
+  width: 60em;
+  height: 60em;
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid grey;
+}
+
+#calculator > * {
+  background-color: aliceblue;
+  border: solid hsla(340, 50%, 57%, 0.7);
+  border-width: 1px 1px 0 0px;
+  border-collapse: collapse;
+}
+
+#calculator > button {
+  flex: 1 1 21%;
+  font-size: 3.6em;
+}
+
+#calculator > #clear {
+  flex: 3 0 63%;
+}
+
+#calculator > #output {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 100%;
+  font-size: 4.6em;
+  background-color: black;
+  color: white;
+}
+
+#output > span {
+  padding-right: 0.5em;
+}
+
+#calculator > .operator {
+  background-color: hsl(340, 90%, 57%);
+  border-color: hsl(0, 0%, 15%);
+}
